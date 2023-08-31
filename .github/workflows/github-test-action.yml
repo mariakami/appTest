@@ -20,7 +20,7 @@ jobs:
       - name: Code Warden Analyze
         uses: rootedconcepts/codewarden-action@v1
         with:
-          github-token: ${{ secrets.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 }}
+          github-token: "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"
           jira-url : "https://jira-dc-8-20-16.dc.atlassian-dev.net"
-          jira-user: ${{ secrets.admin }}
-          jira-password: ${{ secrets.Password1! }}
+          jira-user: "admin"
+          jira-password: "Password1!"
