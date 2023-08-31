@@ -1,0 +1,26 @@
+name: Code Warden In Action
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pull-requests: write
+ 
+jobs:
+  codewarden-test:
+    runs-on: ubuntu-latest
+   
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Code Warden Analyze
+        uses: rootedconcepts/codewarden-action@v1
+        with:
+          github-token: ${{ secrets.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 }}
+          jira-url : "https://jira-dc-8-20-16.dc.atlassian-dev.net"
+          jira-user: ${{ secrets.admin }}
+          jira-password: ${{ secrets.Password1! }}
