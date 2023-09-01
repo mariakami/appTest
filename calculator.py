@@ -4,11 +4,7 @@ def add(x, y):
 
 # Function to subtract two numbers
 def subtract(x, y):
-    return x - y
-
-# Function to multiply two numbers
-def multiply(x, y):
-    return x * y
+    return x - y;
 
 # Function to divide two numbers
 def divide(x, y):
@@ -22,7 +18,6 @@ while True:
     print("Options:")
     print("Enter 'add' for addition")
     print("Enter 'subtract' for subtraction")
-    print("Enter 'multiply' for multiplication")
     print("Enter 'divide' for division")
     print("Enter 'quit' to end the program")
 
